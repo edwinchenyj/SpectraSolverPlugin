@@ -6,9 +6,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# add_definitions("-Wall -mpreferred-stack-boundary=4")
-# set(gcc_coverage_compile_flags "-wl,--no-as-needed")
-# set(cmake_cxx_flags "${cmake_cxx_flags} ${gcc_coverage_compile_flags}")
+add_definitions("-Wall -mpreferred-stack-boundary=4")
+set(gcc_coverage_compile_flags "-wl,--no-as-needed")
+set(cmake_cxx_flags "${cmake_cxx_flags} ${gcc_coverage_compile_flags}")
 
 # OpenMP.
 find_package(OpenMP REQUIRED)
